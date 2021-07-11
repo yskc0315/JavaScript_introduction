@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>テンプレート</title>
+<link href="../../_common/images/favicon.ico" rel="shortcut icon">
+<link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
+<link href="../../_common/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<div class="container">
+<h1>コンソールでモンスターを倒せ！</h1>
+<h2>繰り返しの回数をカウントする</h2>
+</div><!-- /.container -->
+</header>
+<main>
+<div class="container">
+<section>
+
+</section>
+</div><!-- /.container -->
+</main>
+<footer>
+<div class="container">
+<p>JavaScript Samples</p>
+</div><!-- /.container -->
+</footer>
+<script>
+  'use strict';
+
+  let enemy = 100;
+  let count = 0;
+
+  window.alert('モンスターが現れた！');
+  while(enemy > 0){
+    console.log('勇者あなたの攻撃！');
+    const attack = Math.floor(Math.random() * 10) + 1;
+    console.log('モンスターに' + attack + 'のダメージを与えた')
+    enemy -= attack;
+    count += 1;
+    if(enemy <= 0){
+      console.log('モンスターを倒した！！');
+    }
+  }
+  console.log(count + '回でモンスターを倒した(⌒∇⌒)');
+</script>
+</body>
+</html>
